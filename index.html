@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1bcceb3279.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="title">함수를 이용하여 파괴 확률 구하기</h1>
+    <div class="container">
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <div class="info-container">
+            <p class="intro">
+                <b class="header">이것은 무엇인가요?</b>
+                <br>게임에서 아이템 레벨이 높을 수록 주로 아이템 파괴확률이 증가합니다.
+                <br>이러한 시스템을 함수를 통해 아이템 파괴확률을 구하는 프로그램입니다.
+                <br><br><br>
+                <b class="header">어떻게 작동하나요?</b>
+                <br>위로 볼록한 이차함수 식 y=x*x을 예로 들어보겠습니다.
+                <br>x값을 아이템 레벨로 할때 (x>0), x값이 증가할 수록 y값도 증가합니다.
+                <br>이때 y값이 아이템 파괴 확률이 되며, 폭을 조정하여 아이템 레벨에 따른 파괴 확률을 구할 수 있습니다.
+                <br>원의 방정식, 직선의 방정식 등을 사용하면 다양한 파괴 확률을 구할 수 있습니다.
+                <br><br>
+                평행이동은 할 수 없으며, 제곱식은 다음과 같이 나타냅니다: y=x*x
+                <br> <b>분수는 다음과 같이 나타냅니다: 1/2, 음수는 다음과 같이 나타냅니다: (-1)</b>
+            </p>
+            <div class="input-container">
+                <p class="text-input">함수식: </p>
+                <input type="text" placeholder="함수식 제곱은 x*x로 입력하세요. ex) y=2*x*x" class="input" id="equInput">
+            </div>
+            <p class="error" id="error">에러: 식을 파싱할 수 없습니다!</p>
+            <div>
+                <p class="stat" id ="stat">현재 아이템 레벨(x): <b>1레벨</b>, 파괴확률(y): <b>100%</b></p>
+            </div>
+            <button class="submit" onclick="InitCanvas()">아이템 레벨 +1</button>
+            
+        </div>
+    </div>
+
+    <button class="github" onclick="openGitHub()"><i><i class="fa-brands fa-github"></i></i></button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

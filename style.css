@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    text-align: center;
+    font-weight: normal;
+    font-size: xx-large;
+    font-family: Dovemayo_gothic;
+}
+
+#canvas {
+    border: 1px solid black;
+    display: flex;
+    border-radius: 10px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.info-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+
+.intro {
+    font-family: Dovemayo_gothic;
+    font-size: large;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.header {
+    font-size: x-large
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-input {
+    font-family: Dovemayo_gothic;
+    font-size: large;
+}
+
+.input {
+    display: flex;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 13px;
+    margin-bottom: auto;
+    width: 700px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: Dovemayo_gothic;
+    font-size: 18px;
+}
+
+.error {
+    display: none;
+    font-family: Dovemayo_gothic;
+    color: rgb(255, 41, 41);
+}
+
+.submit {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+    font-family: Dovemayo_gothic;
+    font-size: large
+}
+
+.stat {
+    font-family: Dovemayo_gothic;
+    font-size: x-large;
+}
+
+.github {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid white;
+}
+
+.fa-github {
+    scale: 400%;
+}
