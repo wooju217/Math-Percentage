@@ -1,6 +1,10 @@
+InitCanvas();
+var errorTxt = document.getElementById('error');
+        errorTxt.style.display = "none";
+
 
 function openGitHub() {
-    window.open("https://github.com/wooju217");
+    window.open("https://github.com/wooju217/Math-Percentage");
 }
 
 var level = 0;
